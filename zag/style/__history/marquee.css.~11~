@@ -1,0 +1,17 @@
+
+div {
+overflow-style: marquee-block;
+marquee-play-count: infinite;
+marquee-speed: slow;
+marquee-style: scroll;
+marquee-direction: reverse;
+font-weight: normal;
+ text-transform: none;
+ animation: 5ms linear 5ms infinite normal;
+    background-color: #1e90ff;
+    width: 64px;
+    height: 16px;
+    animation-duration: 10s;
+            -moz-animation: ease-in;
+            -moz-animation-direction: normal;
+            }

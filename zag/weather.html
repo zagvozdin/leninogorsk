@@ -1,0 +1,52 @@
+<html>
+<meta http-equiv='Content-Type' content='text/html; charset=windows-1251'/>
+<meta http-equiv='refresh' content='3900'/>
+<title>Прогноз погоды на три дня</title>
+<link rel='stylesheet' href='./style/style.css'/>
+<script type='text/javascript' src='./jquery/jquery.min.js'></script>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<table class='outer' width=98 height=98>
+<tr><td>
+<div id=weather class='inner_upper'>...</div>
+<div id='data' class='inner_lower'><marquee scrolldelay='100'>ГОО СК МАЯК 2015</marquee></div>
+</td></tr>
+</table>
+<script type='text/javascript'>
+var arr_date = [];
+var arr_data = [];
+arr_date[1]='18 февралясегодня';
+arr_data[1] = '14&hellip;9&deg;C';
+arr_date[2]='18 февралясегодня';
+arr_data[2] = '769 мм р.с.';
+arr_date[3]='18 февралясегодня';
+arr_data[3] = '69% влажн';
+arr_date[4]='18 февралясегодня';
+arr_data[4] = ' юго-зап<br/>3,4 м/с';
+arr_date[5]='19 февралязавтра';
+arr_data[5] = '11&hellip;7&deg;C';
+arr_date[6]='19 февралязавтра';
+arr_data[6] = '763 мм р.с.';
+arr_date[7]='19 февралязавтра';
+arr_data[7] = '65% влажн';
+arr_date[8]='19 февралязавтра';
+arr_data[8] = ' юго-зап<br/>4,6 м/с';
+arr_date[9]='20 февраля';
+arr_data[9] = '12&hellip;8&deg;C';
+arr_date[10]='20 февраля';
+arr_data[10] = '760 мм р.с.';
+arr_date[11]='20 февраля';
+arr_data[11] = '76% влажн';
+arr_date[12]='20 февраля';
+arr_data[12] = ' сев-зап<br/>2,7 м/с';
+i = 1;
+setInterval( function() { $('#weather').html(arr_date[i]+'</br>'+arr_data[i]); i++; if( i>=arr_date.length ) i = 1; } , 3000 );
+</script>
+</body>
+</html>
